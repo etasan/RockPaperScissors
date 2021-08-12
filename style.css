@@ -269,7 +269,7 @@ body {
 }
 
 .btnrock {
-  background-image: url(./images/Rock.png);
+  background-image: url(images/Rock.png);
   width: 100px;
   height: 100px;
   background-repeat: no-repeat;
@@ -309,7 +309,7 @@ body {
 }
 
 .btnpaper {
-  background-image: url(./images/Paper.png);
+  background-image: url(images/Paper.png);
   width: 100px;
   height: 100px;
   background-repeat: no-repeat;
@@ -349,7 +349,7 @@ body {
 }
 
 .btnscissors {
-  background-image: url(./images/Scissors.png);
+  background-image: url(images/Scissors.png);
   width: 100px;
   height: 100px;
   background-repeat: no-repeat;
