@@ -58,39 +58,36 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function setImageP(playerSelection) {
+    
     if (playerSelection === "rock") {
-        imagePlayer.style.setProperty('--imageP', 'url(/images/Rock.png)');
+        imagePlayer.style.setProperty('--imageP', 'url(images/Rock.png)');
     } else if (playerSelection === 'paper') {
-        imagePlayer.style.setProperty('--imageP', 'url(/images/Paper.png)');
+        imagePlayer.style.setProperty('--imageP', 'url(images/Paper.png)');
     } else {
-        imagePlayer.style.setProperty('--imageP', 'url(/images/Scissors.png)');
+        imagePlayer.style.setProperty('--imageP', 'url(images/Scissors.png)');
     }
 }
 
 function setImageC(computerSelection) {
-    console.log(computerSelection);
+
     if (computerSelection === "rock") {
-        imagePlayer.style.setProperty('--imageC', 'url(/images/Rock.png)');
+        imagePlayer.style.setProperty('--imageC', 'url(images/Rock.png)');
     } else if (computerSelection === 'paper') {
-        imagePlayer.style.setProperty('--imageC', 'url(/images/Paper.png)');
+        imagePlayer.style.setProperty('--imageC', 'url(images/Paper.png)');
     } else {
-        imagePlayer.style.setProperty('--imageC', 'url(/images/Scissors.png)');
+        imagePlayer.style.setProperty('--imageC', 'url(images/Scissors.png)');
     }
 }
 
 function play() {
     let playerSelection = this.value;
-    console.log(playerSelection);
     setImageP(playerSelection);
     let computerSelection = computerPlay();
     setImageC(computerSelection);
     let roundResult = playRound(playerSelection, computerSelection);
-    console.log(roundResult);
     gameScore(roundResult);
     scoreDisplayP.innerHTML = `<span>Senin Skorun:</span> ${playerScore}`;
     scoreDisplayC.innerHTML = `<span>Bilgisayar Skoru:</span> ${computerScore}`;
-    console.log("Your score is " + playerScore);
-    console.log("Computer score is " + computerScore);
 
     if (playerScore === 5 || computerScore === 5) {
         gameOver.classList.add('active');
@@ -106,11 +103,9 @@ function gameScore(roundResult) {
     }
 
     if (playerScore === 5) {
-        console.log(playerWin);
         return gameOutput.innerHTML = `Oyunu sen kazandın!`;
     
     } else if (computerScore === 5) {
-        console.log(computerWin);
         return gameOutput.innerHTML = `Oyunu bilgisayar kazandı!`;
     }
 }
