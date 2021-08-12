@@ -269,7 +269,7 @@ body {
 }
 
 .btnrock {
-  background-image: url(images/Rock.png);
+  background-image: url(rockpaperscissors/images/Rock.png);
   width: 100px;
   height: 100px;
   background-repeat: no-repeat;
